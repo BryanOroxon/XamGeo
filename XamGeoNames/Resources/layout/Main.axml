@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:text="Obtener Localización"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/getGeoRef" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="185.0dp"
+        android:id="@+id/imageView1" />
+    <TextView
+        android:text="País"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textPais"
+        android:layout_marginLeft="60dp"
+        android:textColor="#2867EE"
+        android:textStyle="italic" />
+    <TextView
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DataPais"
+        android:layout_marginLeft="110dp"
+        android:textColor="#C0C0C0"
+        android:textStyle="bold" />
+    <TextView
+        android:text="capital"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textCapital"
+        android:layout_marginLeft="60dp"
+        android:paddingTop="12dp"
+        android:textColor="#2867EE"
+        android:textStyle="italic" />
+    <TextView
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DataCapital"
+        android:layout_marginLeft="110dp"
+        android:textColor="#C0C0C0"
+        android:textStyle="bold" />
+    <TextView
+        android:text="Código de país"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textCountryCode"
+        android:layout_marginLeft="60dp"
+        android:paddingTop="12dp"
+        android:textColor="#2867EE"
+        android:textStyle="italic" />
+    <TextView
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DataCountryCode"
+        android:layout_marginLeft="110dp"
+        android:textColor="#C0C0C0"
+        android:textStyle="bold" />
+    <TextView
+        android:text="Continente"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textContinente"
+        android:layout_marginLeft="60dp"
+        android:paddingTop="12dp"
+        android:textColor="#2867EE"
+        android:textStyle="italic" />
+    <TextView
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DataContinente"
+        android:layout_marginLeft="110dp"
+        android:textColor="#C0C0C0"
+        android:textStyle="bold" />
+    <TextView
+        android:text="Idioma"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textLanguages"
+        android:layout_marginLeft="60dp"
+        android:paddingTop="12dp"
+        android:textColor="#2867EE"
+        android:textStyle="italic" />
+    <TextView
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DataLanguages"
+        android:layout_marginLeft="110dp"
+        android:textColor="#C0C0C0"
+        android:textStyle="bold" />
+    <TextView
+        android:text="Población"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textPopulation"
+        android:layout_marginLeft="60dp"
+        android:paddingTop="12dp"
+        android:textColor="#2867EE"
+        android:textStyle="italic"
+        android:inputType="number|number"/>
+    <TextView
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DataPopulation"
+        android:layout_marginLeft="110dp"
+        android:textColor="#C0C0C0"
+        android:textStyle="bold" />
+    <TextView
+        android:text="Nombre"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textName"
+        android:layout_marginLeft="60dp"
+        android:paddingTop="12dp"
+        android:textColor="#2867EE"
+        android:textStyle="italic" />
+    <TextView
+        android:text="Luis Bryan Oroxón Ramírez"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DataName"
+        android:layout_marginLeft="110dp"
+        android:textColor="#C0C0C0"
+        android:textStyle="bold" />
+    <TextView
+        android:text="E-mail"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textEmail"
+        android:layout_marginLeft="60dp"
+        android:paddingTop="12dp"
+        android:textColor="#2867EE"
+        android:textStyle="italic" />
+    <TextView
+        android:text="lanzer2002@hotmail.com"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DataEmail"
+        android:layout_marginLeft="110dp"
+        android:textColor="#C0C0C0"
+        android:textStyle="bold" />
+</LinearLayout>
