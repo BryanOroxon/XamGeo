@@ -51,11 +51,7 @@ namespace XamGeoNames
     [Activity(Label = "XamGeoNames", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
-        //Instance of webclient for async processing
-        WebClient webClient;
-        ImageView imageView;
-        string url;
-
+ 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);

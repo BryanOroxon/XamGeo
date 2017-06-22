@@ -72,20 +72,23 @@ namespace XamGeoNames
 			// aapt resource value: 0x7f050007
 			public const int DataCountryCode = 2131034119;
 			
-			// aapt resource value: 0x7f050011
-			public const int DataEmail = 2131034129;
+			// aapt resource value: 0x7f05000f
+			public const int DataCurrency = 2131034127;
+			
+			// aapt resource value: 0x7f050013
+			public const int DataEmail = 2131034131;
 			
 			// aapt resource value: 0x7f05000b
-			public const int DataLanguages = 2131034123;
+			public const int DataExtension = 2131034123;
 			
-			// aapt resource value: 0x7f05000f
-			public const int DataName = 2131034127;
+			// aapt resource value: 0x7f05000d
+			public const int DataLanguages = 2131034125;
+			
+			// aapt resource value: 0x7f050011
+			public const int DataName = 2131034129;
 			
 			// aapt resource value: 0x7f050003
 			public const int DataPais = 2131034115;
-			
-			// aapt resource value: 0x7f05000d
-			public const int DataPopulation = 2131034125;
 			
 			// aapt resource value: 0x7f050000
 			public const int getGeoRef = 2131034112;
@@ -102,20 +105,23 @@ namespace XamGeoNames
 			// aapt resource value: 0x7f050006
 			public const int textCountryCode = 2131034118;
 			
-			// aapt resource value: 0x7f050010
-			public const int textEmail = 2131034128;
+			// aapt resource value: 0x7f05000e
+			public const int textCurrency = 2131034126;
+			
+			// aapt resource value: 0x7f050012
+			public const int textEmail = 2131034130;
 			
 			// aapt resource value: 0x7f05000a
-			public const int textLanguages = 2131034122;
+			public const int textExtension = 2131034122;
 			
-			// aapt resource value: 0x7f05000e
-			public const int textName = 2131034126;
+			// aapt resource value: 0x7f05000c
+			public const int textLanguages = 2131034124;
+			
+			// aapt resource value: 0x7f050010
+			public const int textName = 2131034128;
 			
 			// aapt resource value: 0x7f050002
 			public const int textPais = 2131034114;
-			
-			// aapt resource value: 0x7f05000c
-			public const int textPopulation = 2131034124;
 			
 			static Id()
 			{
