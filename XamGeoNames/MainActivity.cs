@@ -10,7 +10,6 @@ using System;
 using System.Threading.Tasks;
 using System.IO;
 using Android.Graphics;
-//using System.Net.Webclient;
 
 namespace XamGeoNames
 {
@@ -49,7 +48,6 @@ namespace XamGeoNames
         public Country[] country;
     }
 
-
     [Activity(Label = "XamGeoNames", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
@@ -61,39 +59,12 @@ namespace XamGeoNames
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-
-            // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
             FindViewById<Button>(Resource.Id.getGeoRef).Click += (s, e) =>
             {
                 LocateMe();
                 
             };
-        }
-
-        async void downloadAsync()
-        {
-            webClient = new WebClient();
-            var url2 = new Uri(url);
-            byte[] imageBytes = null;
-            try
-            {
-                imageBytes = await webClient.DownloadDataTaskAsync(url2);
-            }
-            catch (TaskCanceledException)
-            {
-
-                return;
-            }
-            catch (Exception e)
-            {
-                return;
-            }
-        }
-
-        void cancelDownload(object sender, System.EventArgs ea)
-        {
-            // Logic to cancel downlaod
         }
 
         private async void LocateMe()
@@ -105,10 +76,8 @@ namespace XamGeoNames
                 var position = await locator.GetPositionAsync(timeoutMilliseconds: 10000);
                 if (position == null)
                     return;
-
                 string latitude = position.Latitude.ToString();
                 string longitude = position.Longitude.ToString();
-
                 Country country = await GetCountryInfo(latitude.Replace(",", "."), longitude.Replace(",", "."));
                 var dPais=FindViewById<TextView>(Resource.Id.DataPais).Text = country.countryName; 
                 var dCapital = FindViewById<TextView>(Resource.Id.DataCapital).Text = country.capital;                
@@ -138,14 +107,13 @@ namespace XamGeoNames
                     imageBitmap = BitmapFactory.DecodeByteArray(imageBytes, 0, imageBytes.Length);
                 }
             }
-
             return imageBitmap;
         }
 
         private async Task<Country> GetCountryInfo(string latitude, string longitude)
         {
             string country = await GetCountryCode(latitude, longitude);
-            string url = "http://api.geonames.org/countryInfoJSON?formatted=true&lang=es&country=" + country + "&username=rdomingo86&style=full";
+            string url = "http://api.geonames.org/countryInfoJSON?formatted=true&lang=es&country=" + country + "&username=bryanoroxon&style=full";
             HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(new Uri(url));
             request.ContentType = "application/json";
             request.Method = "GET";
@@ -178,8 +146,6 @@ namespace XamGeoNames
                 }
             }
         }
-
-
     }
 }
 
