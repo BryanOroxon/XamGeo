@@ -83,8 +83,9 @@ namespace XamGeoNames
                 var dCapital = FindViewById<TextView>(Resource.Id.DataCapital).Text = country.capital;                
                 var dContinente = FindViewById<TextView>(Resource.Id.DataContinente).Text = country.continentName;
                 var dCountryCode = FindViewById<TextView>(Resource.Id.DataCountryCode).Text = country.countryCode;
+                var dExtension = FindViewById<TextView>(Resource.Id.DataExtension).Text = country.areaInSqKm;
                 var dLanguagues = FindViewById<TextView>(Resource.Id.DataLanguages).Text = country.languages;
-                var dPopulation= FindViewById<TextView>(Resource.Id.DataPopulation).Text = country.population;               
+                var dCurrency= FindViewById<TextView>(Resource.Id.DataCurrency).Text = country.currencyCode;               
                 var im1 = FindViewById<ImageView>(Resource.Id.imageView1);
                 var imageBitmap = GetImageBitmapFromUrl("http://flags.fmcdn.net/data/flags/w580/"+country.countryCode.ToLower() + ".png".ToString());
                 im1.SetImageBitmap(imageBitmap);

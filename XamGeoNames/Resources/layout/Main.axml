@@ -10,7 +10,7 @@
         android:id="@+id/getGeoRef" />
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="185.0dp"
+        android:layout_height="160.0dp"
         android:id="@+id/imageView1" />
     <TextView
         android:text="País"
@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/textCapital"
         android:layout_marginLeft="60dp"
-        android:paddingTop="12dp"
+        android:paddingTop="5dp"
         android:textColor="#2867EE"
         android:textStyle="italic" />
     <TextView
@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/textCountryCode"
         android:layout_marginLeft="60dp"
-        android:paddingTop="12dp"
+        android:paddingTop="5dp"
         android:textColor="#2867EE"
         android:textStyle="italic" />
     <TextView
@@ -75,7 +75,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/textContinente"
         android:layout_marginLeft="60dp"
-        android:paddingTop="12dp"
+        android:paddingTop="5dp"
         android:textColor="#2867EE"
         android:textStyle="italic" />
     <TextView
@@ -88,13 +88,32 @@
         android:textColor="#C0C0C0"
         android:textStyle="bold" />
     <TextView
+        android:text="Extensión Geográfica"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textExtension"
+        android:layout_marginLeft="60dp"
+        android:paddingTop="5dp"
+        android:textColor="#2867EE"
+        android:textStyle="italic" />
+    <TextView
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DataExtension"
+        android:layout_marginLeft="110dp"
+        android:textColor="#C0C0C0"
+        android:textStyle="bold" />
+    <TextView
         android:text="Idioma"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textLanguages"
         android:layout_marginLeft="60dp"
-        android:paddingTop="12dp"
+        android:paddingTop="5dp"
         android:textColor="#2867EE"
         android:textStyle="italic" />
     <TextView
@@ -107,22 +126,22 @@
         android:textColor="#C0C0C0"
         android:textStyle="bold" />
     <TextView
-        android:text="Población"
+        android:text="Moneda"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textPopulation"
+        android:id="@+id/textCurrency"
         android:layout_marginLeft="60dp"
-        android:paddingTop="12dp"
+        android:paddingTop="5dp"
         android:textColor="#2867EE"
         android:textStyle="italic"
-        android:inputType="number|number"/>
+        android:inputType="number|number" />
     <TextView
         android:text=""
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/DataPopulation"
+        android:id="@+id/DataCurrency"
         android:layout_marginLeft="110dp"
         android:textColor="#C0C0C0"
         android:textStyle="bold" />
@@ -133,7 +152,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/textName"
         android:layout_marginLeft="60dp"
-        android:paddingTop="12dp"
+        android:paddingTop="5dp"
         android:textColor="#2867EE"
         android:textStyle="italic" />
     <TextView
@@ -152,7 +171,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/textEmail"
         android:layout_marginLeft="60dp"
-        android:paddingTop="12dp"
+        android:paddingTop="5dp"
         android:textColor="#2867EE"
         android:textStyle="italic" />
     <TextView
